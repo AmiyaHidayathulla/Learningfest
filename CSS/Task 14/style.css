@@ -1,0 +1,32 @@
+.parent{
+    height: 50px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grandparent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+.circle
+{
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
