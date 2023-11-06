@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+<style>
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+</style>
+
+<body style="background-color: rgb(72,103,170); color: white; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h2>LOGIN</h2>
+    <form onsubmit=" return validate()" action="msg.html">
+        <div>
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" placeholder="Username">
+        </div>
+        <br><br>
+        <div>
+            <label for="pass">Password:</label>
+             <input type="password" id="pass" placeholder="Password">
+        </div>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+         function validate(){
+                var username= document.getElementById("uname");
+                var password= document.getElementById("pass");
+
+                if(username.value==""||password.value=="")
+                {
+                    alert("No blank values allowed");
+                    return false;
+                }
+                else
+                {
+                    true;
+                }
+        }
+    </script>
+   
+</body>
+</html>
